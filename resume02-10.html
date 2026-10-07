@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rutik Pawar - Resume</title>
+    <style>
+        @page {
+            size: A4 portrait;
+            margin: 0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html, body {
+            width: 210mm;
+            height: 297mm;
+            background-color: #fff;
+            color: #222;
+            font-family: Arial, Helvetica, sans-serif;
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        .resume-container {
+            width: 210mm;
+            height: 297mm;
+            padding: 8mm 12mm;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 2px;
+        }
+
+        h1 {
+            font-size: 21pt;
+            letter-spacing: 0.5px;
+            color: #111;
+            margin-bottom: 1px;
+            line-height: 1.1;
+        }
+
+        .role {
+            font-size: 11.5pt;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 2px;
+        }
+
+        .contact-line, .links-line {
+            font-size: 10pt;
+            color: #333;
+            line-height: 1.25;
+        }
+
+        a {
+            color: #0b57d0;
+            text-decoration: none;
+        }
+
+        h2 {
+            font-size: 11pt;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: #111;
+            border-bottom: 1.5px solid #222;
+            padding-bottom: 1px;
+            margin-top: 5px;
+            margin-bottom: 2px;
+        }
+
+        p {
+            font-size: 10pt;
+            line-height: 1.3;
+            text-align: justify;
+        }
+
+        ul {
+            padding-left: 18px;
+            margin: 0;
+        }
+
+        li {
+            font-size: 10pt;
+            line-height: 1.3;
+            margin-bottom: 1px;
+        }
+
+        .project-item {
+            margin-bottom: 3px;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 10.2pt;
+            font-weight: bold;
+            line-height: 1.25;
+        }
+
+        .project-header a {
+            font-weight: normal;
+            font-size: 9.5pt;
+        }
+
+        .tech-stack {
+            font-size: 9.5pt;
+            font-style: italic;
+            color: #444;
+            line-height: 1.2;
+            margin-bottom: 1px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            font-size: 10pt;
+            line-height: 1.25;
+            margin-bottom: 2px;
+        }
+
+        .sub-text {
+            font-size: 9.2pt;
+            color: #444;
+        }
+
+        @media print {
+            html, body {
+                width: 210mm;
+                height: 297mm;
+                margin: 0 !important;
+                padding: 0 !important;
+                overflow: hidden !important;
+            }
+            .resume-container {
+                width: 210mm;
+                height: 297mm;
+                padding: 8mm 12mm;
+                margin: 0 !important;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="resume-container">
+    <header>
+        <h1>RUTIK PAWAR</h1>
+        <div class="role">Java Full Stack Developer</div>
+        <div class="contact-line">
+            Phone: 8767751157 &nbsp;|&nbsp; Email: <a href="mailto:rutikpawar0410@gmail.com">rutikpawar0410@gmail.com</a>
+        </div>
+        <div class="links-line">
+            <a href="https://rutikpawar04.github.io/Rutik-Pawar-Portfolio/" target="_blank">rutikpawar04.github.io/Rutik-Pawar-Portfolio</a> &nbsp;|&nbsp;
+            <a href="https://github.com/rutikpawar04" target="_blank">github.com/rutikpawar04</a> &nbsp;|&nbsp;
+            <a href="https://linkedin.com/in/rutik-pawar-3b8606297" target="_blank">linkedin.com/in/rutik-pawar-3b8606297</a>
+        </div>
+    </header>
+
+    <section>
+        <h2>Professional Summary</h2>
+        <p>
+            Motivated Java Full Stack Developer with strong knowledge of Core Java, OOPs, Collections, SQL, Spring Boot, REST APIs, and JPA/Hibernate. Experienced in developing backend applications, integrating REST APIs, and working with relational databases. Familiar with frontend technologies including HTML, CSS, JavaScript, and React.js. Quick learner with strong problem-solving, teamwork, and communication skills.
+        </p>
+    </section>
+
+    <section>
+        <h2>Technical Skills</h2>
+        <ul>
+            <li><strong>Programming:</strong> Java, OOPs, Collections, Multithreading, Exception Handling, DSA</li>
+            <li><strong>Backend:</strong> Spring Boot, REST APIs, JPA, Hibernate</li>
+            <li><strong>Database:</strong> SQL, MySQL</li>
+            <li><strong>Frontend:</strong> HTML5, CSS3, JavaScript, React.js</li>
+            <li><strong>Tools &amp; Platforms:</strong> Git, GitHub, VS Code, Eclipse, Postman</li>
+            <li><strong>Core Concepts:</strong> DBMS, Operating Systems, MVC Architecture</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Projects</h2>
+        <div class="project-item">
+            <div class="project-header">
+                <span>1. WanderLust – Travel &amp; Property Listing Web Application</span>
+                <a href="https://wanderlust-5bx8.onrender.com/" target="_blank">https://wanderlust-5bx8.onrender.com/</a>
+            </div>
+            <div class="tech-stack">Technologies: React.js, HTML, CSS, JavaScript, Node.js, Express.js, MongoDB</div>
+            <ul>
+                <li>Contributed to the frontend development of an academic travel and property listing application.</li>
+                <li>Developed responsive user interface components using React.js, HTML, CSS, and JavaScript.</li>
+                <li>Worked on frontend integration and user interactions.</li>
+                <li>Collaborated with team members during the development of the academic project.</li>
+            </ul>
+        </div>
+
+        <div class="project-item">
+            <div class="project-header">
+                <span>2. Employee Management System</span>
+            </div>
+            <div class="tech-stack">Technologies: Java, Spring Boot, REST API, JPA/Hibernate, MySQL, HTML, CSS, JavaScript</div>
+            <ul>
+                <li>Developed an employee management application using Spring Boot and MySQL.</li>
+                <li>Implemented REST APIs for creating, retrieving, updating, and deleting employee records.</li>
+                <li>Used JPA/Hibernate for database interaction and entity management.</li>
+                <li>Followed Controller, Service, and Repository architecture for better code organization.</li>
+                <li>Tested and verified REST APIs using Postman.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Education</h2>
+        <div class="row">
+            <div>
+                <strong>B.E – Computer Science and Engineering</strong> (2026)<br>
+                <span class="sub-text">Anuradha Engineering College, Chikhli | Sant Gadge Baba Amravati University</span>
+            </div>
+            <div style="text-align: right;">
+                <strong>CGPA: 7.86</strong><br>
+                <span class="sub-text">8th Sem SGPA: 8.7</span>
+            </div>
+        </div>
+        <div class="row">
+            <div>
+                <strong>Higher Secondary Certificate (12th)</strong><br>
+                <span class="sub-text">Sharad Pawar High School, Pangri-Ubharhande</span>
+            </div>
+            <div>81.17% (2022)</div>
+        </div>
+        <div class="row">
+            <div>
+                <strong>Secondary School Certificate (10th)</strong><br>
+                <span class="sub-text">Sharad Pawar High School, Pangri-Ubharhande</span>
+            </div>
+            <div>88.60% (2020)</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Certifications</h2>
+        <p>Core Java &nbsp;•&nbsp; SQL</p>
+    </section>
+
+    <section>
+        <h2>Achievements &amp; Activities</h2>
+        <ul>
+            <li>University Cricket Team – Opener Batsman and Vice Captain (Zone Winner – 2 Times)</li>
+            <li>Active participant in sports and college event management activities</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Soft Skills</h2>
+        <p>Problem Solving &nbsp;|&nbsp; Teamwork &nbsp;|&nbsp; Communication &nbsp;|&nbsp; Leadership &nbsp;|&nbsp; Quick Learning</p>
+    </section>
+</div>
+
+</body>
+</html>

@@ -1001,7 +1001,211 @@ ul {
 }
 
 /* =========================================================
-   11. FEATURED PROJECTS SECTION
+   11. INTERNSHIP EXPERIENCE SECTION
+   ========================================================= */
+.experience-card {
+    position: relative;
+    padding: 50px 52px;
+    border-radius: var(--radius-lg);
+    background: linear-gradient(145deg, rgba(16, 24, 52, 0.85) 0%, rgba(8, 12, 30, 0.88) 100%);
+    border: 1px solid var(--border-glass);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    box-shadow: var(--shadow-lg), 0 0 40px rgba(56, 189, 248, 0.06);
+    overflow: hidden;
+    transition: transform var(--transition-smooth), border-color var(--transition-smooth), box-shadow var(--transition-smooth);
+}
+
+.experience-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--primary), var(--secondary), var(--accent), transparent);
+    opacity: 0.8;
+}
+
+.experience-card::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 24px;
+    bottom: 24px;
+    width: 3.5px;
+    border-radius: var(--radius-full);
+    background: linear-gradient(180deg, var(--primary), var(--secondary), var(--accent));
+    box-shadow: 0 0 15px var(--primary-glow);
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--border-highlight);
+    box-shadow: var(--shadow-lg), 0 0 45px rgba(56, 189, 248, 0.16);
+}
+
+.experience-header {
+    margin-bottom: 24px;
+}
+
+.experience-meta {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 14px;
+    flex-wrap: wrap;
+}
+
+.experience-type {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 14px;
+    border-radius: var(--radius-full);
+    background: rgba(56, 189, 248, 0.12);
+    border: 1px solid rgba(56, 189, 248, 0.35);
+    color: var(--primary-light);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.12);
+}
+
+.experience-year {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 14px;
+    border-radius: var(--radius-full);
+    background: rgba(168, 85, 247, 0.12);
+    border: 1px solid rgba(168, 85, 247, 0.35);
+    color: #e9d5ff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.experience-role {
+    color: #ffffff;
+    font-size: clamp(24px, 4vw, 34px);
+    font-weight: 800;
+    line-height: 1.2;
+    letter-spacing: -0.8px;
+    margin-bottom: 8px;
+}
+
+.experience-company {
+    color: var(--primary-light);
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    letter-spacing: -0.2px;
+}
+
+.experience-company .company-icon {
+    font-size: 20px;
+    filter: drop-shadow(0 0 10px rgba(56, 189, 248, 0.4));
+}
+
+.experience-description {
+    color: var(--text-secondary);
+    font-size: 15.5px;
+    line-height: 1.85;
+    margin-bottom: 28px;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.experience-subtitle {
+    color: var(--text-primary);
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    text-transform: uppercase;
+}
+
+.experience-subtitle::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(90deg, var(--border-glass), transparent);
+}
+
+.experience-responsibilities {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-bottom: 32px;
+}
+
+.experience-responsibilities li {
+    position: relative;
+    padding-left: 28px;
+    color: var(--text-secondary);
+    font-size: 14.5px;
+    line-height: 1.75;
+    transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.experience-responsibilities li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--primary);
+    font-size: 18px;
+    font-weight: 800;
+    text-shadow: 0 0 12px var(--primary-glow);
+    transition: transform var(--transition-fast);
+}
+
+.experience-responsibilities li:hover {
+    color: #ffffff;
+    transform: translateX(4px);
+}
+
+.experience-responsibilities li:hover::before {
+    transform: scale(1.2);
+}
+
+.experience-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.experience-skills span {
+    display: inline-flex;
+    align-items: center;
+    padding: 7px 18px;
+    border-radius: var(--radius-full);
+    background: rgba(56, 189, 248, 0.05);
+    border: 1px solid rgba(56, 189, 248, 0.22);
+    color: var(--text-primary);
+    font-size: 13px;
+    font-weight: 500;
+    backdrop-filter: blur(8px);
+    transition: all var(--transition-smooth);
+}
+
+.experience-skills span:hover {
+    color: #ffffff;
+    border-color: var(--primary);
+    background: rgba(56, 189, 248, 0.16);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3), 0 0 18px rgba(56, 189, 248, 0.3);
+}
+
+/* =========================================================
+   12. FEATURED PROJECTS SECTION
    ========================================================= */
 .project-main {
     position: relative;
@@ -1801,6 +2005,10 @@ footer span {
         padding: 30px 32px;
         gap: 25px;
     }
+
+    .experience-card {
+        padding: 40px 34px;
+    }
 }
 
 /* =========================================================
@@ -1899,6 +2107,27 @@ footer span {
     .contact-form {
         padding: 28px 22px;
     }
+
+    .experience-card {
+        padding: 32px 24px;
+    }
+
+    .experience-card::after {
+        top: 0;
+        bottom: auto;
+        left: 25px;
+        right: 25px;
+        width: auto;
+        height: 3px;
+    }
+
+    .experience-role {
+        font-size: 24px;
+    }
+
+    .experience-company {
+        font-size: 16px;
+    }
 }
 
 /* =========================================================
@@ -1961,6 +2190,18 @@ footer span {
 
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+
+    .experience-card {
+        padding: 26px 18px;
+    }
+
+    .experience-role {
+        font-size: 21px;
+    }
+
+    .experience-meta {
+        gap: 8px;
     }
 
     .project-content h3 {

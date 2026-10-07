@@ -186,7 +186,7 @@ window.addEventListener("scroll", function () {
 // =========================================================
 
 const revealElements = document.querySelectorAll(
-    ".section-title, .about-text, .about-card, .skill-card, .project-main, .education-card, .contact-info, .contact-form"
+    ".section-title, .about-text, .about-card, .skill-card, .experience-card, .project-main, .education-card, .contact-info, .contact-form"
 );
 
 
